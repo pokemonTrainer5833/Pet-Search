@@ -1,0 +1,25 @@
+.paw__icon {
+  margin-right: 20px;
+  color: #00a8ff;
+}
+header {
+  position: relative !important;
+  height: 100vh;
+  z-index: 100 !important;
+}
+nav.transparent {
+  z-index: 1000 !important;
+  box-shadow: none;
+}
+.slider {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100% !important;
+
+  background-color: black;
+}
+.hero__text-lg {
+  margin-top: 170px;
+}

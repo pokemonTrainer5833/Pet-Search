@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pet Finder 🐶</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+              <i class="fas fa-paw paw__icon"></i>Pet Finder
+              <span class="blue-text text-lighten-2">.</span></a
+            >
+            <ul id="mobile-nav" class="right hide-on-med-and-down">
+              <li><a href="#">More projects</a></li>
+              <li><a href="#">Contact Me</a></li>
+              <li>
+                <a href="#"><i class="fab fa-github github__icon"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook facebook__icon"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin linkedin__icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="slider fullscreen">
+        <ul class="slides">
+          <li>
+            <img src="../img/hero__img-1.gif" />
+            <!-- random image -->
+            <div class="caption center-align">
+              <h3 class="hero__text-lg">Find Cats</h3>
+              <h5 class="light grey-text text-lighten-3">
+                Meow !!!
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="../img/hero__img-2.gif" />
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3 class="hero__text-lg">Find Dogs</h3>
+              <h5 class="light grey-text text-lighten-3">
+                Woof!!
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="../img/hero__img-3.gif" />
+            <!-- random image -->
+            <div class="caption right-align">
+              <h3 class="hero__text-lg">And many more</h3>
+              <h5 class="light grey-text text-lighten-3">
+                Like hamsters,rabbits etc..
+              </h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.slider').slider({
+          indicators: false,
+          transition: 1000
+        });
+      });
+    </script>
+  </body>
+</html>
