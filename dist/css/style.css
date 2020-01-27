@@ -1,3 +1,9 @@
+/*the font imports*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+html,
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
 .paw__icon {
   margin-right: 20px;
   color: #00a8ff;
@@ -22,4 +28,26 @@ nav.transparent {
 }
 .hero__text-lg {
   margin-top: 170px;
+}
+.nav__links {
+  transition: all 0.5s;
+}
+.nav__links:hover,
+.nav__links:active {
+  color: aqua;
+}
+.social__icons {
+  transition: all 0.5s;
+}
+.github__icon:hover,
+.github__icon:active {
+  color: #c32aa3;
+}
+.linkedin__icon:hover,
+.linkedin__icon:active {
+  color: #007bb5;
+}
+.facebook__icon:hover,
+.facebook__icon:active {
+  color: #25d366;
 }
