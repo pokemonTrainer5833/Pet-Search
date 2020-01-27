@@ -47,7 +47,7 @@
       <div class="slider fullscreen">
         <ul class="slides">
           <li>
-            <img src="../img/hero__img-1.gif" />
+            <img src="./img/hero__img-1.gif" />
             <!-- random image -->
             <div class="caption center-align">
               <h3 class="hero__text-lg">Find Cats</h3>
@@ -57,7 +57,7 @@
             </div>
           </li>
           <li>
-            <img src="../img/hero__img-2.gif" />
+            <img src="./img/hero__img-2.gif" />
             <!-- random image -->
             <div class="caption left-align">
               <h3 class="hero__text-lg">Find Dogs</h3>
@@ -67,7 +67,7 @@
             </div>
           </li>
           <li>
-            <img src="../img/hero__img-3.gif" />
+            <img src="./img/hero__img-3.gif" />
             <!-- random image -->
             <div class="caption right-align">
               <h3 class="hero__text-lg">And more</h3>
@@ -87,7 +87,7 @@
           <div class="col m4 s12">
             <div class="card">
               <div class="card-image main__image"data-content-type="&#x1f415;">
-                <img src="../img/card__img-1.jpg" alt="cute doggy" />
+                <img src="./img/card__img-1.jpg" alt="cute doggy" />
             </div>
             <div class="card-content">
               <h5 class="section__details-gradient center">Search Pets</h5>
@@ -102,7 +102,7 @@
         <div class="col m4 s12">
           <div class="card">
             <div class="card-image main__image-1"data-content-type="&#x1f415;">
-              <img src="../img/card__img-2.jpg" alt="maps" />
+              <img src="./img/card__img-2.jpg" alt="maps" />
           </div>
           <div class="card-content">
             <h5 class="section__details-gradient center">Much Convenient</h5>
@@ -116,7 +116,7 @@
       <div class="col m4 s12">
         <div class="card">
           <div class="card-image main__image-2"data-content-type="&#x1f415;">
-            <img src="../img/card__img-3.jpg" alt="maps" />
+            <img src="./img/card__img-3.jpg" alt="maps" />
         </div>
         <div class="card-content">
           <h5 class="section__details-gradient center">Best Prices</h5>
@@ -127,6 +127,31 @@
         </div>
       </div>
     </div>
+      </div>
+    </section>
+    <section class="section search__section">
+      <div class="container">
+       <h3 class="center section__details-gradient section__details-header">Search for Pets</h3>
+       <form>
+         <div class="input-field">
+           <select id="animal-select">
+             <option value="Dog">Dog</option>
+             <option value="Cat">Cat</option>
+             <option value="Bird">Bird</option>
+             <option value="Barnyard">Barnyard</option>
+           </select>
+           <label for="animal-select">Select animal Type</label>
+         </div>
+         <div class="input-field">
+           <input type="text" placeholder="Enter Zip Code" id="zip">
+         
+         </div>
+         <div class="container"><button class="submit__btn  center-text">Search</button></div>
+         
+       </form>
+       <div class="search__results">
+         
+       </div>
       </div>
     </section>
     <script
@@ -142,6 +167,8 @@
           indicators: false,
           transition: 1000
         });
+        //initalize the select list
+        $('select').formSelect();
       });
     </script>
   </body>
