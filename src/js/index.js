@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 import PetController from './modals/getPet';
 import domEle from './views/domEle';
+import ui from './views/display';
 import { renderSpinner, clearSpinner } from './views/spinner';
 
 const getPetDetails = async () => {
@@ -18,7 +19,12 @@ const getPetDetails = async () => {
   try {
     await pets.getPets(animal, zipCode);
     clearSpinner();
-    console.log(pets.results);
+    const UI = new ui();
+    if (pets.results.data.animals.length <= 3) {
+      UI.renderLessData(pets.results);
+    } else {
+      UI.renderPagination(pets.results);
+    }
   } catch (err) {
     console.log(err);
     clearSpinner();
