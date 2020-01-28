@@ -70,9 +70,7 @@ section.section__details {
 .card:hover {
   transform: translateY(-10px);
 }
-.card.main__card {
-  height: 700px !important;
-}
+
 .card .card-image {
   position: relative;
   cursor: pointer;
@@ -170,4 +168,15 @@ button.submit__btn:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*this is the display section*/
+.collection {
+  width: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+}
+.card .card-image.main__img {
+  height: 250px !important;
 }

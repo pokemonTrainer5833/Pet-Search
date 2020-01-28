@@ -19,8 +19,8 @@ class ui {
         return `
         <div class="row" id="${curPage}">
         <div class="col m4 s12">
-       <div class="card main__card">
-     <div class="card-image">
+       <div class="card">
+     <div class="card-image main__img">
      <img src="${
        ele.photos.length > 0
          ? ele.photos[0].medium
@@ -37,8 +37,8 @@ class ui {
          <li class="collection-item">Status : ${ele.status}</li>
          <li class="collection-item">Email : ${ele.contact.email}</li>
          <li class="collection-item">Phone : ${
-           ele.contact.phone !== null ? ele.contact.phone[0] : 'N/A'
-         },  ${ele.contact.phone !== null ? ele.contact.phone[1] : 'N/A'}</li>
+           ele.contact.phone !== null ? ele.contact.phone : 'N/A'
+         }</li>
          <li class="collection-item">Address : ${
            ele.contact.address.address1
          }</li>
@@ -52,8 +52,8 @@ class ui {
       } else if ((index + 1) % 3 === 0) {
         curPage++;
         return `   <div class="col m4 s12">
-       <div class="card main__card">
-       <div class="card-image">
+       <div class="card">
+       <div class="card-image main__img">
        <img src="${
          ele.photos.length > 0
            ? ele.photos[0].medium
@@ -71,8 +71,8 @@ class ui {
          <li class="collection-item">Status : ${ele.status}</li>
          <li class="collection-item">Email : ${ele.contact.email}</li>
          <li class="collection-item">Phone : ${
-           ele.contact.phone !== null ? ele.contact.phone[0] : 'N/A'
-         },  ${ele.contact.phone !== null ? ele.contact.phone[1] : 'N/A'}</li>
+           ele.contact.phone !== null ? ele.contact.phone : 'N/A'
+         }</li>
          <li class="collection-item">Address : ${
            ele.contact.address.address1
          }</li>
@@ -85,11 +85,11 @@ class ui {
       } else {
         return `
         <div class="col m4 s12">
-        <div class="card main__card">
-        <div class="card-image">
+        <div class="card">
+        <div class="card-image main__img">
         <img src="${
-          ele.photos !== null
-            ? ele.photos.length > 0
+          ele.photos.length > 0
+            ? ele.photos[0].medium
             : 'https://images.unsplash.com/photo-1575425955246-0497627bef60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80'
         }" alt="image not available">
      </div>
@@ -103,8 +103,8 @@ class ui {
           <li class="collection-item">Status : ${ele.status}</li>
           <li class="collection-item">Email : ${ele.contact.email}</li>
           <li class="collection-item">Phone : ${
-            ele.contact.phone !== null ? ele.contact.phone[0] : 'N/A'
-          },  ${ele.contact.phone !== null ? ele.contact.phone[1] : 'N/A'}</li>
+            ele.contact.phone !== null ? ele.contact.phone : 'N/A'
+          }</li>
           <li class="collection-item">Address : ${
             ele.contact.address.address1
           }</li>
