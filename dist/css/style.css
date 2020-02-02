@@ -180,3 +180,26 @@ button.submit__btn:hover::after {
 .card .card-image.main__img {
   height: 250px !important;
 }
+
+footer {
+  margin-top: 40px !important;
+  margin-bottom: 0 !important;
+  background-color: rgba(0, 168, 255, 0.9);
+  overflow: hidden;
+}
+
+footer ul li a {
+  color: #fff;
+  margin-left: 20px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 400px) {
+  .brand-logo {
+    width: 100% !important;
+    text-align: center;
+  }
+  header {
+    height: 85vh;
+  }
+}

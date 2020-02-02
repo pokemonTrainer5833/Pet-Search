@@ -15,7 +15,6 @@ class ui {
     const arr = data.data.animals;
     let resArr = arr.map((ele, index) => {
       if (index % 3 === 0) {
-        console.log(ele);
         return `
         <div class="row" id="${curPage}">
         <div class="col m4 s12">
@@ -118,13 +117,6 @@ class ui {
       }
     });
     markup += resArr.join('');
-    markup += '<ul class="pagination">';
-    for (let i = 0; i < pages; i++) {
-      markup += `
-    <li class="waves-effect"><a href="#${i + 1}">${i + 1}</a></li>
-    `;
-    }
-    markup += '</ul>';
     domEle.searchRes.innerHTML += markup;
   }
 }
